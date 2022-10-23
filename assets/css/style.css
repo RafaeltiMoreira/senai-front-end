@@ -4,12 +4,28 @@
   --gray-color-shadow: #eee;
   --color-placeholder: rgb(209, 206, 206);
   --shadow-color-card: rgba(0, 0, 0, 0.45);
+  --shadow-color-grey: #999;
   --back-color-card-front: #101c2c;
   --back-color-card-back: #05c3ff;
   --back-color-body: #c7cdd3;
   --back-color-alert: rgba(0, 0, 0, 0.9);
   --back-color-button: yellow;
-  --color-gamer-text: #fff;
+  --back-blue-cart: #9ccbe6;
+  --back-bluedark-add: #388bc5;
+  --back-blue-info: #399ade;
+  --back-green-add: #10d64b;
+  --back-green-button: #48d05f;
+  --back-green-buttonhover: #32a345;
+  --back-green-hover: #35af4a;
+  --back-rgbagrey-window: rgba(255, 255, 255, 0.5);
+  --back-grey-info: #ccc;
+  --color-grey-price: #333;
+  --color-greydark-desc: #555;
+  --color-black-name: #000;
+  --color-grey-info: #d6d6d6;
+  --color-blue-item: #315970;
+  --border-blue-item: #79b9dd;
+  --border-green-button: #63f77c;
   --gap: 3rem;
 }
 
@@ -38,6 +54,7 @@ a {
 
 p {
   margin-bottom: 3rem;
+  font-size: 1.8rem;
 }
 
 .responsive-table {
@@ -144,7 +161,7 @@ p {
 }
 
 .cart-book {
-  background-color: #9ccbe6;
+  background-color: var(--back-blue-cart);
   width: 0vw;
   font-family: "Poppins", sans-serif;
   transition: all ease 0.2s;
@@ -152,7 +169,7 @@ p {
 }
 
 .cart-book.show {
-  width: 99vw;
+  width: 100vw;
 }
 
 .cart--area {
@@ -169,6 +186,7 @@ main {
 
 .initial-text {
   padding: 20px;
+  font-size: 1.8rem;
 }
 
 h1,
@@ -292,9 +310,9 @@ h6 {
   height: 50px;
   line-height: 50px;
   border-radius: 25px;
-  background-color: #388bc5;
+  background-color: var(--back-bluedark-add);
   text-align: center;
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 22px;
   cursor: pointer;
   margin-top: -25px;
@@ -302,25 +320,25 @@ h6 {
 }
 
 .book-item a:hover .book-item--add {
-  background-color: #10d64b;
+  background-color: var(--back-green-add);
 }
 
 .book-item--price {
   font-size: 1.6rem;
-  color: #333;
+  color: var(--color-grey-price);
   margin-top: 5px;
 }
 
 .book-item--name {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #000;
+  color: var(--color-black-name);
   margin-top: 5px;
 }
 
 .book-item--desc {
   font-size: 0.938rem;
-  color: #555;
+  color: var(--color-greydark-desc);
   margin-top: 10px;
 }
 
@@ -330,7 +348,7 @@ h6 {
   top: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: var(--back-rgbagrey-window);
   display: none;
   transition: all ease 0.5s;
   justify-content: center;
@@ -341,9 +359,9 @@ h6 {
 
 .bookWindowBody {
   width: 900px;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   border-radius: 10px;
-  box-shadow: 0px 0px 15px #999;
+  box-shadow: 0px 0px 15px var(--shadow-color-grey);
   display: flex;
   margin: 20px 0px;
 }
@@ -359,7 +377,7 @@ h6 {
   position: absolute;
   width: 30px;
   height: 30px;
-  background-color: #000;
+  background-color: var(--color-black-name);
 }
 
 .bookBig img {
@@ -380,13 +398,13 @@ h6 {
 
 .bookInfo .bookInfo--desc {
   font-size: 1.2rem;
-  color: #999;
+  color: var(--shadow-color-grey);
   margin-top: 10px;
   font-family: "Poppins", sans-serif;
 }
 
 .bookInfo--sector {
-  color: #ccc;
+  color: var(--back-grey-info);
   text-transform: uppercase;
   font-size: 0.875rem;
   margin-top: 30px;
@@ -401,29 +419,29 @@ h6 {
 
 .bookInfo--size {
   padding: 10px 15px;
-  color: #000;
-  background-color: #eee;
+  color: var(--color-black-name);
+  background-color: var(--gray-color-shadow);
   font-size: 0.875rem;
   font-weight: bold;
   cursor: pointer;
 }
 
 .bookInfo--size:hover {
-  background-color: #ccc;
+  background-color: var(--back-grey-info);
 }
 
 .bookInfo--size.selected {
-  background-color: #399ade;
-  color: #fff;
+  background-color: var(--back-blue-info);
+  color: var(--secondary-color);
 }
 
 .bookInfo--size.selected span {
-  color: #d6d6d6;
+  color: var(--color-grey-info);
 }
 
 .bookInfo--size span {
   font-size: 0.75rem;
-  color: #999;
+  color: var(--shadow-color-grey);
   font-weight: normal;
 }
 
@@ -439,7 +457,7 @@ h6 {
 
 .bookInfo--qtarea {
   display: inline-flex;
-  background-color: #eee;
+  background-color: var(--gray-color-shadow);
   border-radius: 10px;
   height: 30px;
 }
@@ -451,7 +469,7 @@ h6 {
   outline: 0;
   cursor: pointer;
   padding: 0px 10px;
-  color: #333;
+  color: var(--color-grey-price);
 }
 
 .bookInfo--qt {
@@ -459,7 +477,7 @@ h6 {
   font-size: 0.75rem;
   font-weight: bold;
   padding: 0px 5px;
-  color: #000;
+  color: var(--color-black-name);
 }
 
 .bookInfo--addButton {
@@ -467,15 +485,15 @@ h6 {
   margin-top: 30px;
   padding: 20px 30px;
   border-radius: 20px;
-  background-color: #48d05f;
-  color: #fff;
+  background-color: var(--back-green-button);
+  color: var(--secondary-color);
   display: inline-block;
   cursor: pointer;
   margin-right: 20px;
 }
 
 .bookInfo--addButton:hover {
-  background-color: #32a345;
+  background-color: var(--back-green-buttonhover);
 }
 
 .bookInfo--cancelButton {
@@ -515,7 +533,7 @@ h6 {
 
 .cart--item--qtarea {
   display: inline-flex;
-  background-color: #eee;
+  background-color: var(--gray-color-shadow);
   border-radius: 10px;
   height: 30px;
 }
@@ -527,7 +545,7 @@ h6 {
   outline: 0;
   cursor: pointer;
   padding: 0px 10px;
-  color: #333;
+  color: var(--color-grey-price);
 }
 
 .cart--item--qt {
@@ -535,13 +553,13 @@ h6 {
   font-size: 0.75rem;
   font-weight: bold;
   padding: 0px 5px;
-  color: #000;
+  color: var(--color-black-name);
 }
 
 .cart--totalitem {
   padding: 15px;
-  border-top: 1px solid #79b9dd;
-  color: #315970;
+  border-top: 1px solid var(--border-blue-item);
+  color: var(--color-blue-item);
   display: flex;
   justify-content: space-between;
   font-size: 0.938rem;
@@ -553,24 +571,24 @@ h6 {
 
 .cart--totalitem.big {
   font-size: 1.25rem;
-  color: #000;
+  color: var(--color-black-name);
   font-weight: bold;
 }
 
 .cart--finalizar {
   padding: 20px 15px;
   border-radius: 20px;
-  background-color: #48d05f;
-  color: #fff;
+  background-color: var(--back-green-button);
+  color: var(--secondary-color);
   cursor: pointer;
   text-align: center;
   margin-top: 20px;
-  border: 2px solid #63f77c;
+  border: 2px solid var(--border-green-button);
   transition: all ease 0.2s;
 }
 
 .cart--finalizar:hover {
-  background-color: #35af4a;
+  background-color: var(--back-green-hover);
 }
 
 .contact-form {
@@ -832,11 +850,35 @@ body .full {
   }
 
   .initial-main-content h2 {
-    font-size: 3.6rem;
+    font-size: 2.6rem;
   }
 
   .main-content h2 {
-    font-size: 3.6rem;
+    font-size: 2.6rem;
+  }
+
+  .initial-text {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .form-grid legend {
+    font-size: 2.6rem;
+  }
+
+  .form-group label {
+    font-size: 1.2rem;
+  }
+
+  .contact-form .form-grid {
+    padding: 20px;
+  }
+
+  .footer {
+    font-size: 1rem;
   }
 
   .main-content {
@@ -844,6 +886,8 @@ body .full {
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   h3 {
@@ -904,7 +948,7 @@ body .full {
   width: 100%;
   height: 100%;
   background-color: var(--back-color-alert);
-  color: var(--color-gamer-text);
+  color: var(--secondary-color);
   font-size: 3rem;
   display: none;
   justify-content: center;
