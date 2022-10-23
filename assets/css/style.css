@@ -943,6 +943,10 @@ body .full {
   background-color: var(--back-color-card-back);
 }
 
+.text-gamer {
+  text-align: center;
+}
+
 #gameOver {
   position: absolute;
   width: 100%;
