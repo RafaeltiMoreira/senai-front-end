@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./assets/images/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-end | SENAI</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <input
+      id="close-menu"
+      class="close-menu"
+      type="checkbox"
+      aria-label="Close menu"
+      role="button"
+    />
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu-initial white-bg">
+      <div class="main-content menu-content">
+        <h1 onclick="getElementById('close-menu').checked = false;">
+          <a class="logoText" href="#home"
+            ><img
+              class="logo-primary"
+              src="assets/images/logo.svg"
+              alt="Logo X One.ti"
+            />BooksDev</a
+          >
+        </h1>
+
+        <nav>
+          <ul onclick="getElementById('close-menu').checked = false;">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#books">Livros</a></li>
+            <li><a href="gamer.html">Jogo</a></li>
+            <li><a href="#contact">contato</a></li>
+          </ul>
+        </nav>
+        <div class="menu-openner"><span>0</span>🛒</div>
+      </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <section id="home" class="initial main-bg section">
+      <div class="main-content initial-content">
+        <div class="initial-main-content">
+          <h2 class="initial-text">Livros para programadores</h2>
+          <p class="initial-text">
+            Seja impresso ou digital, os livros são aliados dos desenvolvedores
+            iniciantes ou experientes. Encontre aqui a chance de se aperfeiçoar
+            na profissão e adquirir conhecimento com o passar do tempo.
+          </p>
+        </div>
+        <div class="initial-img">
+          <img
+            src="assets/images/books.svg"
+            alt="Uma pessoa pesquisando sobre livros de programação."
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="white-bg">
+      <div class="models">
+        <div class="book-item">
+          <a href="">
+            <div class="book-item--img"><img src="" /></div>
+            <div class="book-item--add">+</div>
+          </a>
+          <div class="book-item--price">R$ --</div>
+          <div class="book-item--name">--</div>
+          <div class="book-item--desc">--</div>
+        </div>
+        <div class="cart--item">
+          <img src="" />
+          <div class="cart--item-nome">--</div>
+          <div class="cart--item--qtarea">
+            <button class="cart--item-qtmenos">-</button>
+            <div class="cart--item--qt">1</div>
+            <button class="cart--item-qtmais">+</button>
+          </div>
+        </div>
+      </div>
+
+      <main id="books">
+        <div class="main-content">
+          <h2>Livros</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+            cumque inventore! Saepe voluptatem molestias asperiores sapiente
+            minima! Amet inventore quisquam quos quibusdam adipisci alias,
+            accusamus culpa id nam deleniti omnis.
+          </p>
+        </div>
+
+        <div class="book-area"></div>
+      </main>
+
+      <aside class="cart-book">
+        <div class="cart--area">
+          <div class="menu-closer">❌</div>
+          <h1>Seus livros</h1>
+          <div class="cart"></div>
+          <div class="cart--details">
+            <div class="cart--totalitem subtotal">
+              <span>Subtotal</span>
+              <span>R$ --</span>
+            </div>
+            <div class="cart--totalitem desconto">
+              <span>Desconto (-10%)</span>
+              <span>R$ --</span>
+            </div>
+            <div class="cart--totalitem total big">
+              <span>Total</span>
+              <span>R$ --</span>
+            </div>
+            <div class="cart--finalizar">Finalizar a compra</div>
+          </div>
+        </div>
+      </aside>
+      <div class="bookWindowArea">
+        <div class="bookWindowBody">
+          <div class="bookInfo--cancelMobileButton">Voltar</div>
+          <div class="bookBig">
+            <img src="" />
+          </div>
+          <div class="bookInfo">
+            <h1>--</h1>
+            <div class="bookInfo--desc">--</div>
+            <div class="bookInfo--sizearea">
+              <div class="bookInfo--sector">Formas de envio</div>
+              <div class="bookInfo--sizes">
+                <div data-key="0" class="bookInfo--size">
+                  Digital <span>--</span>
+                </div>
+                <div data-key="1" class="bookInfo--size">
+                  Capa comum <span>--</span>
+                </div>
+                <div data-key="2" class="bookInfo--size selected">
+                  Capa dura <span>--</span>
+                </div>
+              </div>
+            </div>
+            <div class="bookInfo--pricearea">
+              <div class="bookInfo--sector">Preço</div>
+              <div class="bookInfo--price">
+                <div class="bookInfo--actualPrice">R$ --</div>
+                <div class="bookInfo--qtarea">
+                  <button class="bookInfo--qtmenos">-</button>
+                  <div class="bookInfo--qt">1</div>
+                  <button class="bookInfo--qtmais">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="bookInfo--addButton">Adicionar ao carrinho</div>
+            <div class="bookInfo--cancelButton">Cancelar</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="initial main-bg section">
+      <div class="main-content initial-content">
+        <div class="initial-main-content">
+          <h2>Livros para programadores</h2>
+          <p>
+            Seja impresso ou digital, os livros são aliados dos desenvolvedores
+            iniciantes ou experientes. Encontre aqui a chance de se aperfeiçoar
+            na profissão e adquirir conhecimento com o passar do tempo.
+          </p>
+        </div>
+        <div class="initial-img">
+          <img
+            src="assets/images/assets.svg"
+            alt="Duas pessoas acessando a internet."
+          />
+        </div>
+        <div class="contact-form">
+          <fieldset class="form-grid">
+            <legend>Deixe uma mensagem</legend>
+            <div class="form-group">
+              <label for="first-name">Primeiro nome</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="Nome"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="last-name">Sobrenome</label>
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Sobrenome"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="last-name">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Seu melhor e-mail"
+              />
+            </div>
+
+            <div class="form-group full">
+              <label for="message">Mensagem</label>
+              <textarea
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Sua mensagem aqui..."
+              ></textarea>
+            </div>
+
+            <div class="form-group full">
+              <button type="submit">Enviar mensagem</button>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer white-bg">
+      <p>
+        <a href="https://rafaeltimoreira.github.io/bio-links/" target="_blank"
+          >Made with 💚💛 by Rafael Moreira</a
+        >
+      </p>
+    </footer>
+
+    <a class="back-to-top" href="#home">></a>
+
+    <script type="text/javascript" src="assets/js/book.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  </body>
+</html>
