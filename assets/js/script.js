@@ -167,3 +167,53 @@ function updateCart() {
     c(".cart-book").style.rigth = "100vw";
   }
 }
+
+/* Validação do formulário */
+
+const form = document.getElementById("contact");
+const fields = document.querySelectorAll(".required");
+const spans = document.querySelectorAll(".span-required");
+const text = document.querySelector("#text-required");
+const emailRegex =
+  /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  nameValidate();
+  lastValidate();
+  emailValidate();
+});
+
+function setError(index) {
+  fields[index].style.border = "3px solid #e63636";
+  spans[index].style.display = "block";
+}
+
+function removeError(index) {
+  fields[index].style.border = "";
+  spans[index].style.display = "none";
+}
+
+function nameValidate() {
+  if (fields[0].value.length < 3) {
+    setError(0);
+  } else {
+    removeError(0);
+  }
+}
+
+function lastValidate() {
+  if (fields[1].value.length < 3) {
+    setError(1);
+  } else {
+    removeError(1);
+  }
+}
+
+function emailValidate() {
+  if (!emailRegex.test(fields[2].value)) {
+    setError(2);
+  } else {
+    removeError(2);
+  }
+}

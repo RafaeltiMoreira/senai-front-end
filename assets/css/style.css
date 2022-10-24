@@ -687,6 +687,11 @@ body .full {
   border: 0.1rem solid var(--primary-color);
 }
 
+.span-required {
+  font-size: 1.6rem;
+  display: none;
+}
+
 /* Responsive carrinho, seções e menu */
 
 @media (max-width: 1000px) {
@@ -732,6 +737,10 @@ body .full {
 
   .menu-closer {
     display: block;
+  }
+
+  .span-required {
+    font-size: 1.2rem;
   }
 
   .bookWindowArea {

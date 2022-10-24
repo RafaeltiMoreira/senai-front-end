@@ -190,53 +190,72 @@
           />
         </div>
         <div class="contact-form">
-          <fieldset class="form-grid">
-            <legend>Deixe uma mensagem</legend>
-            <div class="form-group">
-              <label for="first-name">Primeiro nome</label>
-              <input
-                type="text"
-                name="first-name"
-                id="first-name"
-                placeholder="Nome"
-              />
-            </div>
+          <form id="form">
+            <fieldset class="form-grid">
+              <legend>Deixe uma mensagem</legend>
+              <div class="form-group">
+                <label for="first-name">Primeiro nome</label>
+                <input
+                  class="required"
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  placeholder="Nome"
+                  oninput="nameValidate()"
+                />
+                <span class="span-required"
+                  >O campo de ser preenchido e ter no mínimo 3 caracteres.</span
+                >
+              </div>
 
-            <div class="form-group">
-              <label for="last-name">Sobrenome</label>
-              <input
-                type="text"
-                name="last-name"
-                id="last-name"
-                placeholder="Sobrenome"
-              />
-            </div>
+              <div class="form-group">
+                <label for="last-name">Sobrenome</label>
+                <input
+                  class="required"
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Sobrenome"
+                  oninput="lastValidate()"
+                />
+                <span class="span-required"
+                  >O campo de ser preenchido e ter no mínimo 3 caracteres.</span
+                >
+              </div>
 
-            <div class="form-group">
-              <label for="last-name">E-mail</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Seu melhor e-mail"
-              />
-            </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input
+                  class="required"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Seu melhor e-mail"
+                  oninput="emailValidate()"
+                />
+                <span class="span-required"
+                  >O e-mail informado não é válido.</span
+                >
+              </div>
 
-            <div class="form-group full">
-              <label for="message">Mensagem</label>
-              <textarea
-                name="message"
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Sua mensagem aqui..."
-              ></textarea>
-            </div>
+              <div class="form-group full">
+                <label for="message">Mensagem</label>
+                <textarea
+                  class="required"
+                  name="message"
+                  id="text-required"
+                  cols="30"
+                  rows="10"
+                  placeholder="Sua mensagem aqui..."
+                  oninput="textValidate()"
+                ></textarea>
+              </div>
 
-            <div class="form-group full">
-              <button type="submit">Enviar mensagem</button>
-            </div>
-          </fieldset>
+              <div class="form-group full">
+                <button type="submit">Enviar mensagem</button>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </div>
     </section>
