@@ -15,6 +15,16 @@ carrinho e banco de dados.
 - CSS e
 - JavaScript.
 
+## Screenshots 📷
+
+<p align="center">
+  <img width="594" height="420" src=https://github.com/RafaeltiMoreira/senai-front-end/blob/main/assets/images/home.png>
+</p>
+
+<p align="center">
+  <img width="594" height="420" src=https://github.com/RafaeltiMoreira/senai-front-end/blob/main/assets/images/gameemenu.png>
+</p>
+
 ## Teacher 🎓
 
 - Ótima didática com o professor Rogerio Alves Santana.
